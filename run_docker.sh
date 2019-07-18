@@ -10,4 +10,4 @@ if [ -z "$2" ]; then
 fi
 
 
-docker run --rm -v $(pwd):/project $1 /bin/bash /project/container_scripts/build_then_flash_firmware.sh $2 $3
+docker run --rm -v $(pwd):/project $1 /bin/bash /project/container_scripts/build_firmware.sh $2 $3 $4
