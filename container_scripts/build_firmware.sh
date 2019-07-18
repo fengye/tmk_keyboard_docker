@@ -7,7 +7,7 @@ fi
 
 if [ -z "$2" ]; then
 	echo Use default variant
-	if [-z "$3" ]; then
+	if [ -z "$3" ]; then
 		echo Use defualt keymap
 		make -f Makefile.unimap clean
 		make -f Makefile.unimap
@@ -18,7 +18,7 @@ if [ -z "$2" ]; then
 	fi
 else
 	echo Use variant $2
-	if [-z "$3" ]; then
+	if [ -z "$3" ]; then
 		echo Use defualt keymap
 		make -f Makefile.unimap.$2 clean
 		make -f Makefile.unimap.$2
